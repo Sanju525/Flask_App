@@ -46,6 +46,35 @@ pip3 install flask-mysqldb
 ```shell
 pip3 install pyyaml
 ```
+### Creating a DATABASE
+
+Create a database for the application to store the credentials or input data from user.
+#### After installing MySQL Open terminal
+```shell
+mysql -u root -p
+```
+Enter the password for your database
+
+### Database 
+```shell
+mysql> CREATE DATABASE flask_app;
+```
+```shell
+mysql> USE flask_app;
+```
+
+```shell
+mysql> CREATE TABLE user(user_id int auto_increment,first_name varchar(30),last_name varchar(30),username varchar(30), password varchar(100), email varchar(40));
+```
+### Configuring db.yaml
+Open the db.yaml.
+
+```shell
+mysql_host: 'localhost'
+mysql_user: 'root'
+mysql_password: '******'
+mysql_db: 'flask_app'
+```
 
 After installing the packages you are ready to deploy the application
 
