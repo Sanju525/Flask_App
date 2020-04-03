@@ -88,4 +88,4 @@ Open the web browser and navigate to the `local-host` to see the deployed output
 > [Local Host](http://127.0.0.1:5000/)
 
 ## Deployed on Heroku
-#### [Heroku](https://fierce-brook-79447.herokuapp.com/)
+> [Heroku](https://fierce-brook-79447.herokuapp.com/)
