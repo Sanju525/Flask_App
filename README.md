@@ -64,7 +64,7 @@ mysql> USE flask_app;
 ```
 
 ```shell
-mysql> CREATE TABLE user(user_id int auto_increment,first_name varchar(30),last_name varchar(30),username varchar(30), password varchar(100), email varchar(40));
+mysql> CREATE TABLE user(user_id int auto_increment,first_name varchar(30),last_name varchar(30),username varchar(30), email varchar(50), password varchar(100));
 ```
 ### Configuring db.yaml
 Open the db.yaml.
