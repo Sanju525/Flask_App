@@ -76,7 +76,7 @@ mysql_password: '******'
 mysql_db: 'flask_app'
 ```
 
-After installing the packages you are ready to deploy the application
+After installing the packages and configuring database you are ready to deploy the application
 
 ### Run the application
 ```shell
