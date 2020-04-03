@@ -14,7 +14,7 @@ MySQL Database
 
 ## Steps for deploying over local server
 
-Clone/Download the repository into your system
+Clone/Download the repository into your system.
 
 > Prerequisite
 
@@ -53,7 +53,7 @@ Create a database for the application to store the credentials or input data fro
 ```shell
 mysql -u root -p
 ```
-Enter the password for your database
+Enter the password for your database.
 
 ### Database 
 ```shell
@@ -76,7 +76,7 @@ mysql_password: '******'
 mysql_db: 'flask_app'
 ```
 
-After installing the packages and configuring database you are ready to deploy the application
+After installing the packages and configuring the database you are ready to deploy the application.
 
 ### Run the application
 ```shell
