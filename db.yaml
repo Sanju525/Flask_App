@@ -1,5 +1,8 @@
-mysql_host: 'ec2-18-210-51-239.compute-1.amazonaws.com'
-mysql_user: 'nmdrsatjzcciix'
-mysql_password: '4ee40a49b55f2be705e1989a49889f91d00ef74d08aa101fe148128cc86df5fb'
+mysql_host: 'localhost'
+# change as per the given username for mysql
+mysql_user: 'root'
+# replace the **** with the the password for the mysql
+mysql_password: '*****'
 # database not yet configured
-mysql_db: 'd6m2da5obfi3n6'
+#  if you created a database with name flask_app the configuration should be as follows
+mysql_db: 'flask_app'
