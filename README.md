@@ -1,6 +1,6 @@
 # Flask_App
 
-This project is based on 'FLASK' a python web development framework written in 'Python'.
+This project is based on `FLASK` a python web development framework written in `Python`.
 
 ## DESCRIPTION
 
