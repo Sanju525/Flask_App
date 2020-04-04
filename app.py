@@ -3,6 +3,7 @@ from flask_mysqldb import MySQL
 from flask_bootstrap import Bootstrap
 import yaml
 import os
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app=Flask(__name__)
 Bootstrap(app)
@@ -16,7 +17,7 @@ app.config['MYSQL_DB'] = db['mysql_db']
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
 
-app.config['SECRET_KEY'] = 'secret'
+app.config['SECRET_KEY'] = os.urandom(24)
 #routing
 
 @app.route('/')
@@ -31,6 +32,10 @@ def about():
 def register():
     if request.method == 'POST':
         userDetails = request.form
+        # For Encrypting the password
+        # password = userDetails['password']
+        # password=generate_password_hash(password)
+        # Replace userDetails['password'] with the above defined varible _ password _
         if userDetails['password'] != userDetails['confirm_password']:
             flash('Passwords do not match! Try again.', 'danger')
             return render_template('register.html')
@@ -50,6 +55,9 @@ def login():
     if request.method == 'POST':
         userDetails = request.form
         username = userDetails['username']
+        # To check the encrypted password
+        # replce the if statement with the below code
+        # str(check_password_hash(user['password'], userDetails['password']))
         cur = mysql.connection.cursor()
         resultValue = cur.execute("SELECT * FROM user WHERE username = %s", ([username]))
         if resultValue > 0:
