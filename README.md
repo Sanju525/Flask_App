@@ -89,3 +89,11 @@ Open the web browser and navigate to the `local-host` to see the deployed output
 
 ## Deployed on Heroku
 > [Heroku](https://fierce-brook-79447.herokuapp.com/)
+
+> Since, i had not configured database it may throw internal server error.
+
+### The below deployment doesn't have any issues.
+
+## Deployed on Pythonanywhere
+> [PythonAW](http://sanju25.pythonanywhere.com/)
+
