@@ -46,6 +46,10 @@ pip3 install flask-mysqldb
 ```shell
 pip3 install pyyaml
 ```
+```shell
+--or simply you can execute--
+pip3 install -r requirements.txt
+```
 ### Creating a DATABASE
 
 Create a database for the application to store the credentials or input data from user.
